@@ -9,7 +9,7 @@ class House:
         return self.number_of_floors
 
     def __str__(self):
-        print(f'Название: {self.name}, количество этажей: {self.number_of_floors}')
+        return str(f'Название: {self.name}, количество этажей: {self.number_of_floors}')
 
     def go_to(self, new_floor):
         f = self.number_of_floors
@@ -25,8 +25,8 @@ class House:
 h1 = House('ЖК Эльбрус', 10)
 h2 = House('ЖК Акация', 20)
 
-h1.__str__()
-h2.__str__()
+print(h1)
+print(h1)
 
 print(len(h1))
 print(len(h2))
